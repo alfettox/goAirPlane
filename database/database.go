@@ -1,5 +1,3 @@
-// database/database.go
-
 package database
 
 // Define the Booking data structure
@@ -11,7 +9,6 @@ type Booking struct {
     SeatNumber    string
 }
 
-// Sample data for bookings
 var Bookings = []Booking{
     {
         PassengerName: "Alessia",
