@@ -52,7 +52,7 @@ The GoAirPlane API provides the following endpoints:
 
 You can access these endpoints using tools like curl or by integrating the API with your applications.
 
-Functions and Syntax
+## Functions and Syntax
 Here are the key functions and their syntax used in the project:
 
 #### main Function
@@ -87,6 +87,8 @@ Description: Lists all flight bookings in JSON format.
         w.Write(bookingsJSON)
 ```
 
+![alt text](./screenshots/getAll.png)
+
 #### findBookingByFlight Function
 
 Description: Finds flight bookings by flight number and returns them in JSON format.
@@ -113,6 +115,8 @@ Syntax:
     }
     removeBookingHandler Function
 ```
+
+![alt text](./screenshots/getOne.png)
 
 #### Description: Removes flight bookings by flight number.
 
@@ -158,3 +162,7 @@ func createBookingHandler(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusCreated)
 }
 ```
+
+![alt text](./screenshots/create1.png)
+
+![alt text](./screenshots/create2.png)
